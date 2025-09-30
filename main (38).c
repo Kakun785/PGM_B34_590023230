@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+
+int main() {
+    int number, remainder, product = 1;
+    int found_odd = 0;  // Flag to check if any odd digit is found
+
+    // Input number
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    // Handle negative numbers
+    if (number < 0) {
+        number = -number;
+    }
+
+    // Process each digit
+    while (number > 0) {
+        remainder = number % 10;
+        if (remainder % 2 != 0) {  // Check if digit is odd
+            product *= remainder;
+            found_odd = 1;
+        }
+        number /= 10;
+    }
+
+    if (found_odd) {
+        printf("Product of odd digits: %d\n", product);
+    } else {
+        printf("No odd digits found in the number.\n");
+    }
+
+    return 0;
+}
