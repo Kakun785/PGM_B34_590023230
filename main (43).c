@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    float sum = 0.0;
+    int numerator = 1, denominator = 2;
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        if (i == 1) {
+            sum += 1; // First term is 1
+        } else {
+            sum += (float)numerator / denominator;
+        }
+
+        // Update numerator and denominator for next term
+        numerator += 2;
+        denominator += 2;
+    }
+
+    printf("Sum of the series up to %d terms = %.2f\n", n, sum);
+
+    return 0;
+}
