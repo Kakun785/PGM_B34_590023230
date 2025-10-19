@@ -4,11 +4,11 @@
 int main() {
     char ch;
 
-    // Ask user for input
+    
     printf("Enter a character: ");
     scanf("%c", &ch);
 
-    // Check for uppercase, lowercase, or not an alphabet
+   
     if (ch >= 'A' && ch <= 'Z') {
         printf("%c is an uppercase alphabet.\n", ch);
     } else if (ch >= 'a' && ch <= 'z') {
