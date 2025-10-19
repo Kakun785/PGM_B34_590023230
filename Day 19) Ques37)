@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function to calculate GCD using Euclidean algorithm
+
 int gcd(int a, int b) {
     int temp;
     if (a < 0) a = -a;
@@ -16,14 +16,14 @@ int gcd(int a, int b) {
 int main() {
     int a, b, lcm;
 
-    // Input two numbers
+    
     printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
 
-    // Calculate LCM
+    
     lcm = (a / gcd(a, b)) * b;
 
-    // To handle negative inputs properly, get absolute value of LCM
+    
     if (lcm < 0)
         lcm = -lcm;
 
