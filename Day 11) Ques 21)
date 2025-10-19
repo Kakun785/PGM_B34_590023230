@@ -5,11 +5,11 @@ int main()
 {
     int month;
 
-    // Input month number
+    
     printf("Enter month number (1-12): ");
     scanf("%d", &month);
 
-    // Switch-case to determine month and days
+    
     switch(month) {
         case 1:
             printf("January - 31 days\n");
