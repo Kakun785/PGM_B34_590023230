@@ -5,16 +5,16 @@ int main() {
     int number, remainder, product = 1;
     int found_odd = 0;  // Flag to check if any odd digit is found
 
-    // Input number
+    
     printf("Enter a number: ");
     scanf("%d", &number);
 
-    // Handle negative numbers
+   
     if (number < 0) {
         number = -number;
     }
 
-    // Process each digit
+   
     while (number > 0) {
         remainder = number % 10;
         if (remainder % 2 != 0) {  // Check if digit is odd
@@ -32,3 +32,4 @@ int main() {
 
     return 0;
 }
+
