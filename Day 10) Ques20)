@@ -6,11 +6,11 @@ int main() {
     
 int day;
 
-    // Input the day number
+    
     printf("Enter a number (1-7) to get the day of the week: ");
     scanf("%d", &day);
 
-    // Use switch-case to print the day
+    
     switch (day) {
         case 1:
             printf("Sunday\n");
