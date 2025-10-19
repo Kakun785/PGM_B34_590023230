@@ -5,14 +5,14 @@
 int main() {
     int number, original, sum = 0, digits = 0, temp, remainder;
 
-    // Input
+    
     printf("Enter a number: ");
     scanf("%d", &number);
 
     original = number;
     temp = number;
 
-    // Count the number of digits
+   
     while (temp != 0) {
         temp = temp / 10;
         digits++;
@@ -20,7 +20,7 @@ int main() {
 
     temp = number;
 
-    // Calculate the sum of digits raised to the power of 'digits'
+   
     while (temp != 0) {
         remainder = temp % 10;
         sum += pow(remainder, digits);
