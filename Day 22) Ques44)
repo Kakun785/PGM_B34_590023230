@@ -16,7 +16,7 @@ int main() {
             sum += (float)numerator / denominator;
         }
 
-        // Update numerator and denominator for next term
+       
         numerator += 2;
         denominator += 2;
     }
@@ -25,3 +25,4 @@ int main() {
 
     return 0;
 }
+
